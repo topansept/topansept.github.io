@@ -3,10 +3,21 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Topan - Blog</title>
+        <title>Topan - Bike Sales Analysis Using Excel</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
+        <style>
+        code {
+          background-color: #eee;
+          padding: 0.3em 0.5em;
+          border-radius: 5px;
+          display: block;
+          margin: 1em 0;
+          white-space: pre-wrap;
+        }
+        
+      </style>
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -154,7 +165,7 @@
         <!-- Header Start -->
         <div class="container-fluid bg-breadcrumb">
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Blog</h4>
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Data Cleaning in MySQL</h4>
                 <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
@@ -169,13 +180,92 @@
         <div class="container-fluid blog py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <!-- this is author post post-->
+                    <h4 class="text-primary">Topan Septiadi Mediana</h4>
+                    <!-- this is title post-->
+                    <h1 class="display-4 mb-4">Bike Sales Analysis Using Microsoft Excel</h1>
+                </div>
+                <div>
+                    <!-- this is content post-->
+                    <p>Understanding customer behavior and sales performance is crucial for any business, especially in the competitive world of retail. In this portfolio project, I showcase how I utilized Microsoft Excel to analyze bike sales data, uncover insights, and provide actionable recommendations. The goal was simple: transform raw sales data into meaningful insights that drive smarter business decisions.</p>
+                    <h2>Project Overview</h2>
+                    <p>The dataset used contains over 1,000 records of bike sales, including fields such as customer demographics, product categories, order dates, purchase channels, and sales values. My primary objectives in this project were to:</p>
+                    <ul>
+                        <li><strong>Clean and Prepare</strong>: The dataset for analysis</li>
+                        <li><strong>Visualize</strong>: Key trends and relationships</li>
+                        <li><strong>Uncover</strong>: Pattern in customer</li>
+                        <li><strong>Build</strong>: an interactive sales dashboard</li>
+                    </ul>
+                    <h2>Step 1: Data Cleaning & Preparation</h2>
+                    <p>The first step was importing the raw data into Excel. I used Power Query to:</p>
+                        <ul>
+                            <li><strong>Remove</strong> duplicates and blank rows</li>
+                            <li><strong>Standarize</strong> date formats and column names</li>
+                            <li><strong>Split</strong> full names into first name and last name for better personalization</li>
+                            <li><strong>COnvert</strong>categorical data such as gender, income level, and product type into consistent values</li>
+                        </ul>
+                    <h2>Step 2: Exploratory Data Analysis (EDA)</h2>
+                    <p>Using <strong>Pivot Tables</strong>, I explored key questions such as:</p>
+                    <ul>
+                        <li>Which bike models sold the most units?</li>
+                        <li>Do men or women purchase more bikes?</li>
+                        <li>Which regions generate the most revenue?
+                        </li>
+                        <li>How does customer income level affect purchase behavior?</li>
+                    </ul>
+                    <p>I found that customers with higher incomes tended to purchase more expensive bikes. Additionally, online sales were more dominant in urban areas, while in-store purchases were higher in rural regions.</p>
+                    <h2>Step 3: Sales Trends & Visualizations</h2>
+                    <p>To make the insights more digestible, I created a set of <strong>Charts</strong> and visuals using Excel:</p>
+                    <ul>
+                        <li>Bar charts showing sales by region and gender</li>
+                        <li>Line graphs to track monthly revenue trends</li>
+                        <li>Pie charts representing sales distribution by product category</li>
+                        <li>Heat maps to highlight high-performing sales representatives</li>
+                    </ul>
+                    <p>Each visualization helped identify what drives performance and where the opportunities lie</p>
+                    <h2>Step 4: Interactive Dashboard</h2>
+                    <p>The highlight of this project was building an interactive sales dashboard using Excel's built-in tools. The dashboard includes:</p>
+                    <ul>
+                        <li>Slicers for filtering by product category, region, and sales channel</li>
+                        <li>KPI cards showing total revenue, total units sold, and average order value</li>
+                        <li>Dynamic charts that update based on user selection</li>
+                    </ul>
+                    <p>This dashboard is not just a reporting tool—it's a decision-making assistant.</p>
+                    <h2>Key Insight & Recommendation</h2>
+                    <p>From the analysis, I derived several business recommendations:</p>
+                    <ul>
+                        <li>Focus marketing on high-income segments to promote premium bikes</li>
+                        <li>Improve online customer experience in rural areas to boost digital sales</li>
+                        <li>Encourage underperforming regions through incentive-based sales programs</li>
+                    </ul>
+                    <h2>Tool Used</h2>
+                    <ul>
+                        <li>Microsoft Excel (Pivot Tables, Charts, Conditional Formatting)</li>
+                        <li>Power Query for data cleaning</li>
+                        <li>Dashboard interactivity using Slicers and Form Controls</li>
+                    </ul>
+                    <h2>Conclusion</h2>
+                    <p>This bike sales analysis project demonstrates the power of Excel for turning raw data into business insights. With just spreadsheet tools and a strategic approach, I was able to extract trends, segment customers, and provide solutions—all within one file. Excel remains one of the most accessible yet powerful tools in a data analyst's toolkit.</p>
+                    <p>Feel free to check out my interactive dashboard or download the Excel file on my <a href="https://github.com/topansept/topansept.github.io/blob/main/projects/Excel%20Project%20Dataset.xlsx">GitHub.</a></p>
+
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+
+
+        <!-- all Blog Start -->
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                     <h4 class="text-primary">From Blog</h4>
                     <h1 class="display-4 mb-4">News And Updates</h1>
                     <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
                     </p>
                 </div>
                 <div class="row g-4 justify-content-center">
-                    <!-- blog data cleaning mysql -->
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="blog-item">
                             <div class="blog-img">
@@ -196,7 +286,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- blog bike analysis excel -->
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="blog-item">
                             <div class="blog-img">
@@ -217,7 +306,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- blog 3 -->
                     <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="blog-item">
                             <div class="blog-img">
@@ -237,75 +325,15 @@
                                 <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
-                    <!-- blog 4 -->
                     </div>
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Business</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Which allows you to pay down insurance bills</a>
-                                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- blog 5 -->
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Business</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Which allows you to pay down insurance bills</a>
-                                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- blog 6 -->
-                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-1.png" class="img-fluid rounded-top w-100" alt="">
-                                <div class="blog-categiry py-2 px-4">
-                                    <span>Business</span>
-                                </div>
-                            </div>
-                            <div class="blog-content p-4">
-                                <div class="blog-comment d-flex justify-content-between mb-3">
-                                    <div class="small"><span class="fa fa-user text-primary"></span> Martin.C</div>
-                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 30 Dec 2025</div>
-                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
-                                </div>
-                                <a href="#" class="h4 d-inline-block mb-3">Which allows you to pay down insurance bills</a>
-                                <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero soluta impedit eligendi? Quibusdam, laudantium.</p>
-                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- this next blog -->
                 </div>
             </div>
+                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.01s">
+                <a class="btn btn-primary rounded-pill py-3 px-5" href="blog.html">View All of My Project</a>
+                </div>
         </div>
-        <!-- Blog End -->
+        <!-- all Blog End -->
+
 
 
         <!-- Footer Start -->
@@ -321,19 +349,19 @@
                                             <h3 class="text-white"><i class="fab fa-slack me-3"></i> Topan Septiadi</h3>
                                             <!-- <img src="img/logo.png" alt="Logo"> -->
                                         </a>
-                                        <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+                                        <p class="text-white mb-4">This is my personal website that gathher all of my projects as data analyst and other.</p>
                                         <div class="footer-btn d-flex">
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="https://facebook.com/topan_ovr"><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="https://x.com/topan_ovr"><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="https://instagram.com/topan.ovr"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-0" href="https://linkedin.com/in/topan-septiadi"><i class="fab fa-linkedin-in"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-3">
                                     <div class="footer-item">
                                         <h4 class="text-white mb-4">Useful Links</h4>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Me</a>
                                         <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
                                         <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
                                         <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
@@ -409,7 +437,7 @@
                                                 </div>
                                                 <div>
                                                     <h4 class="text-white">Address</h4>
-                                                    <p class="mb-0">123 Street New York.USA</p>
+                                                    <p class="mb-0">Ciawigebang, Kuningan, Jawa Barat, Indonesia</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -420,7 +448,7 @@
                                                 </div>
                                                 <div>
                                                     <h4 class="text-white">Mail Us</h4>
-                                                    <p class="mb-0">info@example.com</p>
+                                                    <p class="mb-0">topansept05@gmail.com</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -444,7 +472,7 @@
                     <div class="col-xl-3">
                         <div class="footer-item">
                             <h4 class="text-white mb-4">Newsletter</h4>
-                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-white mb-3">Whether you're a fellow analyst, a student learning data, a business owner trying to make sense of numbers, or just a curious mind — this newsletter is made for you. No fluff, no spam. Just real data insights you can actually use.</p>
                             <div class="position-relative rounded-pill mb-4">
                                 <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
                                 <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
@@ -475,13 +503,13 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Topan Septiadi Mediana</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-start text-body">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
+                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">Topan Septiadi Mediana</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">Officx</a>
                     </div>
                 </div>
             </div>
