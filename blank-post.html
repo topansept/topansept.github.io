@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Topan - Data Cleaning in MySQL</title>
+        <title>Topan - Bike Sales Analysis Using Excel</title>
         <link rel="icon"type="image/x-icon" href="img/favicon.ico">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
@@ -181,58 +181,28 @@
         <div class="container-fluid blog py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <!-- this is author post post-->
                     <h4 class="text-primary">Topan Septiadi Mediana</h4>
-                    <h1 class="display-4 mb-4">Data Cleaning in MySQL</h1>
+                    <!-- this is title post-->
+                    <h1 class="display-4 mb-4">Lorem ipsum</h1>
                 </div>
                 <div>
-                    <div class="blog-img">
-                    <img src="img/mysqldbperson.png" class="img-fluid rounded-top w-100" alt="">
-                    <p>As a data analyst, one of the most critical steps before performing any analysis is <strong>data cleaning</strong>. No matter how sophisticated your dashboard or model is, if the data is messy, the outcome will likely be misleading.</p>
+                    <!-- this is content post-->
+                <div class="blog-img">
+                    <img src="img/ecxelchartsperson.png" class="img-fluid rounded-top w-100" alt="">
 
-                    <p>In many of my projects—especially those involving <strong>MySQL</strong> as the main data source—data cleaning serves as a foundational task. Below, I’ll walk through several real-world data cleaning techniques I’ve applied using SQL queries in MySQL.</p>
-
-                    <h2>Detect and Handle Missing Values</h2>
-                    <code>SELECT * FROM sales WHERE customer_name IS NULL;</code>
-                    <p>Once identified, missing values can be:</p>
+                </div>
+                    <p></p>
+                    <h2></h2>
+                    <p></p>
                     <ul>
-                    <li>Filled with default values</li>
-                    <li>Imputed based on logic or averages</li>
-                    <li>Removed completely (when justified)</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
-
-                    <h2>Remove Duplicate Records</h2>
-                    <code>
-                        DELETE FROM sales 
-                        WHERE id NOT IN (
-                          SELECT MIN(id) FROM (SELECT * FROM sales) AS temp
-                          GROUP BY order_id
-                        );
-                    </code>
-                    <p>I often use <code>MIN(id)</code> to retain one original row while eliminating duplicate records based on a unique column like <code>order_id</code>.</p>
-
-                    <h2>Trim Extra Spaces in Text</h2>
-                    <code>UPDATE customers SET customer_name = TRIM(customer_name);</code>
-                    <p><code>TRIM()</code> is a simple but powerful function to ensure clean strings, especially useful for preventing errors during JOIN operations.</p>
-
-                    <h2>Standardize Date Formats</h2>
-                    <code>SELECT STR_TO_DATE(order_date, '%d/%m/%Y') AS formatted_date FROM orders;</code>
-                    <p>Using <code>STR_TO_DATE</code>, I make sure all date formats are consistent so functions like <code>YEAR()</code> or <code>MONTH()</code> work flawlessly.</p>
-
-                    <h2>Normalize Categorical Values</h2>
-                    <code>
-                    UPDATE orders 
-                    SET ship_mode = 'Standard Class' 
-                    WHERE ship_mode IN ('standard', 'std', 'STD');
-                    </code>
-                    <p>Normalizing category values avoids data being split into several variants that should actually be grouped together.</p>
-
-                    <h2>Real-World Project Insight</h2>
-                    <p>In one of my sales analysis projects, I discovered that over 15% of the data contained duplicates or inconsistent labels. After cleaning, the analysis results became much more reliable, helping the business make smarter, data-driven decisions.</p>
-
-                    <h2>Final Thoughts</h2>
-                    <p><strong>Data cleaning is not just about technical skills—it's about understanding context.</strong> With MySQL, I can clean, normalize, and prepare raw data efficiently to ensure quality insights.</p>
-
-                    <p>If you're working with data, never skip this step. Because in analytics, <em>quality &gt; quantity</em>.</p>
+                    
+                    <!-- this is end post-->
                 </div>
               </div>
             </div>
